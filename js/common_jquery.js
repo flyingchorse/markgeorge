@@ -42,8 +42,7 @@ $('#news-pane').bind('mouseenter', function() {
 
 $('#news-pane').bind('mouseleave', function() {
 	
-	$('#news-pane').css('left',-250);
-	
+	$('#news-pane').animate({left:-250}, 1000);	
 });
 
 
