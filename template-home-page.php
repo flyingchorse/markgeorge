@@ -8,7 +8,9 @@
  */
 get_header('home'); ?>
 
-<div id="news-pane"></div>
+<div id="news-pane">
+	<h1>Latest News</h1>
+</div>
 
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
