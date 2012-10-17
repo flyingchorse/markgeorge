@@ -12,7 +12,7 @@ get_header('home'); ?>
 	
 	
 	<div class="news-article">
-	<h1>Latest News</h1>
+	<h1>AOP Photographers awards</h1>
 	<div class="news-article-content">Blah Blah<img src="#"></div>
 	</div>
 	
