@@ -32,4 +32,19 @@ $(".icon-bar a").hover(
   }
 );
 
+
+
+$('#news-pane').bind('mouseenter', function() {
+	
+	$('#news-pane').animate({left:0}, 1000);
+	
+});
+
+$('#news-pane').bind('mouseleave', function() {
+	
+	$('#news-pane').css('left',-250);
+	
+});
+
+
  });
