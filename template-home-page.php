@@ -8,6 +8,8 @@
  */
 get_header('home'); ?>
 
+<div id="news-pane"></div>
+
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
 
