@@ -1,5 +1,5 @@
 /*
-Theme Name: digidoltheme
+Theme Name: markgeorge
 Theme URI: https://wpcom-themes.svn.automattic.com/_s/
 Author: Digidol
 Author URI: http://digidol-media.com/
@@ -1203,6 +1203,16 @@ text-align: right;
 padding-right: 0;
 }
 
+
+#news-pane {
+	
+	position: absolute;
+	top:50;
+	border: white solid 1px;
+	height: 800px;
+	width: 300px;
+	left:-260px;
+}
 
 
 
