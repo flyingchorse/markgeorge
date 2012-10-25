@@ -33,17 +33,32 @@ $(".icon-bar a").hover(
 );
 
 
+//$('#news-pane').animate({right: -275}, 1000);
 
-$('#news-pane').bind('mouseenter', function() {
+$('#news-pane-button').toggle(
+	function() 
+	{
 	
-	$('#news-pane').animate({left:0}, 1000);
+	$('#news-pane').animate({right: 0}, 1000);
+	$('#news-pane-button').animate({right: -60}, 1000);
+		
+	},
+	function()
+	{
+		$('#news-pane').animate({right: -300}, 1000);
+		$('#news-pane-button').animate({right: -260}, 1000);
 	
-});
+	});
 
-$('#news-pane').bind('mouseleave', function() {
+
+/*
+$('#close-pane').bind('click', function() {
 	
-	$('#news-pane').animate({left: -250}, 1000);	
+	$('#news-pane').animate({right: -300}, 1000);
+	$('#news-pane-button').animate({right: -260}, 1000);	
 });
+*/
+
 
 
  });

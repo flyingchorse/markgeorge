@@ -19,8 +19,7 @@ and Blueprint http://www.blueprintcss.org/
 */
 
 
-/* =Reset
--------------------------------------------------------------- */
+/* !bk_Reset -------------------------------------------------------------- */
 *{
 	    margin:0;
 	    padding:0;
@@ -102,8 +101,7 @@ a img {
 }
 
 
-/* =Global
------------------------------------------------ */
+/* !bk_Global----------------------------------------------- */
 
 body,
 button,
@@ -319,7 +317,7 @@ textarea {
 	width: 98%;
 }
 
-/* Links */
+/* !bk_Links */
 a {
 	color: rgba(0,0,0,1.0);
 	text-decoration: none;
@@ -335,7 +333,7 @@ a:active {
 	text-decoration: none;
 }
 
-/* Alignment */
+/* !bk_Alignment */
 .alignleft {
 	display: inline;
 	float: left;
@@ -360,15 +358,13 @@ a:active {
 }
 
 
-/* =Header
------------------------------------------------ */
+/* !bk_Header ----------------------------------------------- */
 
 .site-header {
 margin: 0 auto;
  /* width:1024px; */ }
 
-/* =Main Page area
------------------------------------------------ */
+/* !bk_Main Page area ----------------------------------------------- */
 
 .site-title {
 position: absolute;
@@ -384,8 +380,7 @@ left:-20000px;
 margin:0 auto;
 /* width: 1024px; */}
 
-/* =footer
------------------------------------------------ */
+/* !bk_footer ----------------------------------------------- */
 
 
 .site-info{
@@ -413,8 +408,7 @@ color: gray;
 	color: #cbcbcb;
 }
 
-/* =Menu
------------------------------------------------ */
+/* !bk_Menu ----------------------------------------------- */
 
 
 #menu-main {
@@ -684,8 +678,7 @@ margin-left: -1px;
 	opacity: 1.0;
 }
 
-/* =Content
------------------------------------------------ */
+/* !bk_Content ----------------------------------------------- */
 
 .sticky {
 }
@@ -735,8 +728,7 @@ margin-left: -1px;
 
 
 
-/* =Asides
------------------------------------------------ */
+/* !bk_Asides ----------------------------------------------- */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -744,8 +736,7 @@ margin-left: -1px;
 }
 
 
-/* =Media
------------------------------------------------ */
+/* !bk_Media ----------------------------------------------- */
 
 .site-header img,
 .entry-content img,
@@ -923,8 +914,7 @@ object {
 }
 .fullscreen #white-button img {
 	height: 15px;
-}/* =Navigation
------------------------------------------------ */
+}/* !bk_Navigation ----------------------------------------------- */
 
 
 
@@ -1009,14 +999,12 @@ padding-left: 10px;
 
 
 
-/* =Comments
------------------------------------------------ */
+/* !bk_Comments ----------------------------------------------- */
 
 .bypostauthor {
 }
 
-/* =Widgets
------------------------------------------------ */
+/* !bk_Widgets ----------------------------------------------- */
 
 .widget {
 	margin: 0 0 1.5em;
@@ -1027,7 +1015,7 @@ padding-left: 10px;
 	display: none;
 }
 
-/*-----------------------Article Slideshow--------------------------------------- */
+/* !bk_Article Slideshow--------------------------------------- */
 
 #slide-container {
 margin-bottom: 30px;
@@ -1063,7 +1051,7 @@ z-index: -1;
 
 
 
-/*--------------------End Article Slideshow--------------*/
+/* !bk_End Article Slideshow  */
 #rg-gallery {
 position: relative;
 padding-top: 40px;
@@ -1203,20 +1191,61 @@ text-align: right;
 padding-right: 0;
 }
 
+/* !bk_News Pane  */
+
+#news-pane-container {
+	position: absolute;
+	height: 100%;
+	width: 325px;
+	overflow: hidden;
+	right: 0;
+	top:0;
+	
+}
+
+#news-pane-button {
+background: url(images/news_ribbon.png) no-repeat left top;
+position: absolute;
+top:84px;
+right: -260px;
+width: 392px;
+height: 52px;
+	
+	
+}
+
+#close-pane {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background: url(images/news.png) no-repeat right top;
+	
+}
 
 #news-pane {
-	
+
+	background-color: rgba(034,034,034,1);
 	position: absolute;
-	top:50;
-	border: white solid 1px;
-	height: 800px;
+	top:0px;
+	right: -300px;
+	height: 100%;
 	width: 300px;
-	left:-260px;
+	padding-top: 130px;
+}
+
+.news-article {
+	padding: 20px;
 }
 
 
-
 @media screen and (max-width: 908px) {
+
+#news-pane-container {
+width: 325px;
+right:-300px;
+}
 /*
 #page {
 margin: 0 auto;
