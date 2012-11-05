@@ -33,7 +33,7 @@
 		echo ' | ' . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
 
 	?></title>
-<meta name="viewport" content="width=device-width" />
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
 			<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<div class="site-info">
-			Represented by <span class="bold-helv"><a href="<?php echo site_url(); ?>/contact/">Mark George</a></span>
+			<span class="bold-helv"><a href="<?php echo site_url(); ?>/contact/">Mark George</a></span> represents
 		</div><!-- .site-info -->
 
 		</hgroup>

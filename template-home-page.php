@@ -1,4 +1,4 @@
-<?php
+	<?php
 /**
  * Template Name: Homepage
  *
@@ -7,41 +7,22 @@
  *
  */
 get_header('home'); ?>
+<div id="news-pane-container">
+<div id="news-pane">
+<?php if ( have_posts() ) : ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
-		<div id="primary" class="site-content">
-		
-			<div id="content" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content'); ?>
 
-				<?php _s_content_nav( 'nav-above' ); ?>
-
-				<?php get_template_part( 'content', 'home' ); ?>
-
-				<?php _s_content_nav( 'nav-below' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() )
-						comments_template( '', true );
-				?>
 
 			<?php endwhile; // end of the loop. ?>
 
-			</div><!-- #content -->
-		</div><!-- #primary .site-content -->
-<div id="news-pane-container">
-<div id="news-pane">
-
 	
-	<div class="news-article">
-	<h1>AOP Photographers awards</h1>
-	<div class="news-article-content">Blah Blah<img src="<?php bloginfo('stylesheet_directory') ?>/images/arjan-aop.jpg" alt="arjan-aop" width="240" /></div>
-	</div>
-	
+		
 </div>
-<div id="news-pane-button"></div>
+<div id="news-pane-button"><div id="news-pane-button-text">NEWS</div></div>
 </div>
-
+<?php endif; ?>
 
 <?php get_footer('home'); ?>

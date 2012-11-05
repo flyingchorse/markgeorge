@@ -1196,8 +1196,7 @@ padding-right: 0;
 #news-pane-container {
 	position: absolute;
 	height: 100%;
-	width: 325px;
-	overflow: hidden;
+	width: 0px;
 	right: 0;
 	top:0;
 	
@@ -1207,13 +1206,21 @@ padding-right: 0;
 background: url(images/news_ribbon.png) no-repeat left top;
 position: absolute;
 top:84px;
-right: -260px;
-width: 392px;
+right: 0px;
+width: 130px;
 height: 52px;
-	
+cursor: pointer;
 	
 }
-
+#news-pane-button-text {
+	font-family:'BaskervilleOldFaceW01';
+	font-size: 20px;
+	color: white;
+	letter-spacing: normal;
+	padding-left: 50px;
+    padding-top: 12px;
+	
+}
 #close-pane {
 	position: absolute;
 	top:0;
@@ -1229,41 +1236,118 @@ height: 52px;
 	background-color: rgba(034,034,034,1);
 	position: absolute;
 	top:0px;
-	right: -300px;
+	width: 0px;
+	padding-top: 150px;
+	right:0px;
 	height: 100%;
-	width: 300px;
-	padding-top: 130px;
 }
 
 .news-article {
 	padding: 20px;
+	
+}
+
+#news-pane article {
+	margin:0px 10px 0px 10px;
+	padding: 10px 10px 40px;
+	border-bottom: 1px solid rgba(197,197,197,0.43);
+	display:none;	
+	
+}
+
+#news-pane article h1 {
+		font-family:'HelveticaNeueW01-Thin';
+		font-size: 15px;
+		color: white;
+}
+
+#news-pane article a {
+	color: white;
+}
+
+#news-pane article a:hover {
+	color: grey;
+}
+
+#news-pane article .entry-meta {
+	font-size: 10px;
+	font-family:'HelveticaNeueW01-Thin';
+	
+}
+
+#news-pane article img {
+	float: left;
+	padding-right: 10px;
+}
+
+.blog .entry-title {
+		font-size: 20px;
+		font-family:'BaskervilleOldFaceW01';
+		padding-bottom: 10px;
 }
 
 
-@media screen and (max-width: 908px) {
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+#news-pane-container {
+right: -286px;
+}
+
+#news-pane {
+	height: auto;
+}
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
 
 #news-pane-container {
-width: 325px;
-right:-300px;
-}
-/*
-#page {
-margin: 0 auto;
-width: 100%;
+right: -734px;
 }
 
-.menu-main-container {
-padding-top: 60px;
+#news-pane {
+	height: auto;
 }
 
-.main-navigation li {
-height: 48px;
 }
 
-.main-navigation a {
-font-size: 85px;
 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+.home #page {
+	width:980px;
 }
-*/
+
+
+
+#news-pane-container {
+right: -734px;
+}
+
+#news-pane {
+	height: auto;
+}
+
+
 
 }

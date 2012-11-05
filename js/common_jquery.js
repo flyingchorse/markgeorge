@@ -39,19 +39,34 @@ $('#news-pane-button').toggle(
 	function() 
 	{
 	
-	$('#news-pane').animate({right: 0}, 1000);
-	$('#news-pane-button').animate({right: -60}, 1000);
+	$('#news-pane').animate({width: 300}, 1000);
+	$('#news-pane-button').animate({width: 340}, 1000);
+	$('#news-pane article').show();
 		
 	},
 	function()
 	{
-		$('#news-pane').animate({right: -300}, 1000);
-		$('#news-pane-button').animate({right: -260}, 1000);
+		$('#news-pane').animate({width: 0}, 1000);
+		$('#news-pane-button').animate({width: 120}, 1000, function(){
+		$('#news-pane article').hide();});
+		
 	
 	});
 
 
 /*
+
+
+$("#animate").click(function() {
+    $("#content").animate(
+            {"height": "100px", "width": "250px"},
+            "slow", function(){
+                $(this).html("Animation Completed");
+            });
+});
+
+
+
 $('#close-pane').bind('click', function() {
 	
 	$('#news-pane').animate({right: -300}, 1000);
