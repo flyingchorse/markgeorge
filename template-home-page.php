@@ -9,11 +9,13 @@
 get_header('home'); ?>
 <div id="news-pane-container">
 <div id="news-pane">
+<div class="news-archive-link"><a href="/news">Archive</a></div>
+<?php query_posts("posts_per_page=6"); ?>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 
-				<?php get_template_part( 'content'); ?>
+				<?php get_template_part( 'newspane'); ?>
 
 
 			<?php endwhile; // end of the loop. ?>

@@ -9,7 +9,7 @@ get_header('attachment'); ?>
 
 		
 			<?php while ( have_posts() ) : the_post();
-				 _s_content_nav( 'nav-above' ); 
+				
 				 
 				$vimeo =  $post->post_content;				
 				?>

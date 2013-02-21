@@ -83,7 +83,7 @@ if (isset ($_GET['slide_id'])){
 															   
 					// Components							
 					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-					thumb_links				:	1,			// Individual thumb links for each slide
+					thumb_links				:	0,			// Individual thumb links for each slide
 					thumbnail_navigation    :   0,			// Thumbnail navigation
 					slides 					:  	[<?php get_template_part( 'galleryimg', 'page' ); ?>
 												],
